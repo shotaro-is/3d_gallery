@@ -4,8 +4,6 @@ import { Suspense } from 'react'
 import { Bloom, ChromaticAberration, EffectComposer } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing'
 
-
-import { Grid } from './Grid.js'
 import { Ground } from './Ground.js'
 import { Frames } from './Frames.js'
 import { GrandeArche } from './GrandeArche.js'
@@ -14,7 +12,6 @@ import { GrandeArche } from './GrandeArche.js'
 export const App = ({ images }) => (
   <Suspense fallback = { null }>
     <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
-      {/* < OrbitControls /> */}
       <color attach="background" args={['#191920']} />
       <fog attach="fog" args={['#191920', 0, 13]} />
       
