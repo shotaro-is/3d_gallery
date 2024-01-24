@@ -33,7 +33,10 @@ export function Frames({ images, q = new THREE.Quaternion(), p = new THREE.Vecto
     return (
       <group
         ref={ref}
-        onClick={(e) => (e.stopPropagation(), setLocation(clicked.current === e.object ? '/' : '/item/' + e.object.name))}
+        onClick={(e) => {
+          e.stopPropagation();
+          setLocation(clicked.current === e.object ? '/' : '/item/' + e.object.name);
+        }}
         onPointerMissed={() => setLocation('/')}>
         {images.map((props) => <Frame key={props.url} {...props} /> /* prettier-ignore */)}
       </group>
@@ -59,7 +62,10 @@ export function Frames({ images, q = new THREE.Quaternion(), p = new THREE.Vecto
       <group {...props}>
         <mesh
           name={name}
-          onPointerOver={(e) => (e.stopPropagation(), hover(true))}
+          onPointerOver={(e) => {
+            e.stopPropagation();
+            hover(true);
+          }}
           onPointerOut={() => hover(false)}
           scale={[1, GOLDENRATIO, 0.05]}
           position={[0, GOLDENRATIO / 2, 0]}>
