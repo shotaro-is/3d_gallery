@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export function GrandeArche(){
     const gltf = useLoader(
         GLTFLoader,
-        process.env.PUBLIC_URL +  "/models/grandearche-5.glb")
+        process.env.PUBLIC_URL +  "/models/grandearche-6.glb")
         useEffect(()=>{
             gltf.scene.scale.set(8, 8, 8.5);
             gltf.scene.position.set(0, 4, -13);

@@ -16,12 +16,11 @@ export const App = ({ images }) => (
     <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
       {/* < OrbitControls /> */}
       <color attach="background" args={['#1c1d1d']} />
-      <fog attach="fog" args={['#1c1d1d', 0, 18]} />
+      <fog attach="fog" args={['#1c1d1d', 0, 13]} />
       
       <group position={[0, -0.5, 0]}>
         <GrandeArche />
         <Frames images={images} />
-        <Grid />
         <Ground />
       </group>
       <Environment preset="city" />
