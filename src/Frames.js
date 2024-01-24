@@ -1,10 +1,9 @@
 import * as THREE from 'three'
 import { useEffect, useRef, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
-import { useCursor, Image, Text, MeshRefractionMaterial, MeshTransmissionMaterial, Html } from '@react-three/drei'
+import { useCursor, Image, Text } from '@react-three/drei'
 import { useRoute, useLocation } from 'wouter'
 import { easing } from 'maath'
-import getUuid from 'uuid-by-string'
 
 const GOLDENRATIO = 1.61803398875
 // const Monolith = 2.25

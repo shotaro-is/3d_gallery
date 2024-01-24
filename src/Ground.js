@@ -1,5 +1,4 @@
 import { MeshReflectorMaterial } from '@react-three/drei'
-import { DoubleSide } from 'three'
 
 export function Ground(){
     return (

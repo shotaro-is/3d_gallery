@@ -1,4 +1,3 @@
-import { useGLTF } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import { Mesh } from 'three'

@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber'
-import {  Environment, OrbitControls } from '@react-three/drei'
+import {  Environment  } from '@react-three/drei'
 import { Suspense } from 'react'
 import { Bloom, ChromaticAberration, EffectComposer } from '@react-three/postprocessing';
 import { BlendFunction } from 'postprocessing'

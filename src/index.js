@@ -3,11 +3,10 @@ import './styles.css'
 import { App } from './App'
 
 
-const opensea = (hash) => `https://i.seadn.io/s/raw/files/${hash}.png`
-const pexel = (id) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`
+// const pexel = (id) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260`
 const height = 0
 
-const hoge = 'https://images.squarespace-cdn.com/content/658bc05875c0fd6e045f1d28/4d7f5440-4a71-44d0-a08d-ac8bedfe1f27/hoge7.png'
+
 
 const images = [
   // Front
