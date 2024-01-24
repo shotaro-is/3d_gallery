@@ -22,7 +22,7 @@ export function Frames({ images, q = new THREE.Quaternion(), p = new THREE.Vecto
         clicked.current.parent.localToWorld(p.set(0, GOLDENRATIO / 2, 1.25))
         clicked.current.parent.getWorldQuaternion(q)
       } else {
-        p.set(0, 0.2, 5.5)
+        p.set(0, 0, 5.5)
         q.identity()
       }
     })

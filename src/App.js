@@ -15,8 +15,8 @@ export const App = ({ images }) => (
   <Suspense fallback = { null }>
     <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
       {/* < OrbitControls /> */}
-      <color attach="background" args={['#1c1d1d']} />
-      <fog attach="fog" args={['#1c1d1d', 0, 13]} />
+      <color attach="background" args={['#191920']} />
+      <fog attach="fog" args={['#191920', 0, 13]} />
       
       <group position={[0, -0.5, 0]}>
         <GrandeArche />
@@ -27,7 +27,7 @@ export const App = ({ images }) => (
       <EffectComposer>
         <Bloom
           blendFunction = { BlendFunction.ADD }
-          intensity = { 0.2 }
+          intensity = { 0 }
           width = { 300 }
           height = { 300 }
           kernelSize = { 5 }
